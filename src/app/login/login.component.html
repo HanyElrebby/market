@@ -1,0 +1,23 @@
+<div style="width:23%; margin: 25px auto">
+  <br><br>
+  <div class="border border-secondary p-3 rounded">
+  <form  (ngSubmit)="submit()">
+    <p>
+      <input type="email" id="email" name="email" class="form-control"  placeholder="E-mail">
+    </p>
+    <p>
+      <input type="password" id="password" name="password" class="form-control"  placeholder="Password" />
+    </p>
+    <p>
+      <input type="checkbox" id="remember_me" name="remember-me">
+      <label for="remember_me" class="inline">Remember me</label>
+    </p>
+    <p>
+      <button  type="submit" class="form-control" style="background-color: orange;color: white">Sign in</button>
+    </p>
+    <p style="text-align: center"><a style="text-decoration:none" routerLink="/account/signup">Forgot password?</a></p>
+  </form>
+    <hr>
+      <p style="text-align: center">Don't have an account? <a style="text-decoration:none" routerLink="/account/signup">Sign up</a></p>
+  </div>
+</div>

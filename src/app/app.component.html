@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">{{ title }}</a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon">
+         </span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+            <span class="sr-only">(current)
+               </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Report</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Expense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+
+        <li>
+          <div style='margin-left: 100px;'>
+            <a href="#" class="cart"><span class='counter'>7</span></a>
+          </div>
+        </li>
+
+        <li>
+          <label class="dropdown">
+            <div class="dd-button">Log in</div>
+            <input type="checkbox" class="dd-input" id="test">
+            <ul class="dd-menu">
+              <li><a style="text-decoration:none" routerLink="/account/login">Log in</a></li>
+              <li><a style="text-decoration:none" routerLink="/account/user">Account</a></li>
+              <li><a style="text-decoration:none" routerLink="/account/signup">sign up</a></li>
+              <li class="divider"></li>
+              <li>
+                <a style="text-decoration:none" routerLink="/logout">Log out</a>
+              </li>
+            </ul>
+          </label>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

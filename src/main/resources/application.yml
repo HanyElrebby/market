@@ -1,0 +1,32 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+    url: jdbc:postgresql://localhost:5432/market
+    username: postgres
+    password: postgres
+    hikari:
+      pool-name: hikari
+      auto-commit: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: market.project.web@gmail.com
+    password: market2021
+    properties.mail.smtp:
+      auth: true
+      starttls.enable: true
+      starttls.required: true
+
+  liquibase:
+    enabled: true
+    change-log: classpath:db/changelog/db.changelog-master.xml
+
+
+server:
+  port: 8888
+
+secret: somerandomsecret
+jwtExpiration: 86400
+jwtExpirationForRememberMe: 100000
